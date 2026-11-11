@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Breaker Remix - Game Jam Practice</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="ui-overlay">
+        <div id="score-display">Score: <span id="score">0</span></div>
+        <div id="lives-display">Lives: <span id="lives">3</span></div>
+        <div id="level-display">Level: <span id="level">1</span></div>
+      </div>
+    </div>
+
+    <!-- Core -->
+    <script src="src/utils/Vector2D.js"></script>
+    <script src="src/utils/Utils.js"></script>
+    <script src="src/config.js"></script>
+
+    <!-- Systems -->
+    <script src="src/systems/Physics.js"></script>
+    <script src="src/systems/Particle.js"></script>
+    <script src="src/systems/Score.js"></script>
+
+    <!-- Entities -->
+    <script src="src/entities/Ball.js"></script>
+    <script src="src/entities/Paddle.js"></script>
+    <script src="src/entities/Brick.js"></script>
+    <script src="src/entities/PowerUp.js"></script>
+
+    <!-- Core Systems -->
+    <script src="src/core/Input.js"></script>
+    <script src="src/core/Scene.js"></script>
+    <script src="src/scenes/MenuScene.js"></script>
+    <script src="src/scenes/GameScene.js"></script>
+    <script src="src/scenes/GameOverScene.js"></script>
+    <script src="src/core/Game.js"></script>
+
+    <!-- Entry Point -->
+    <script src="src/main.js"></script>
+  </body>
+</html>
